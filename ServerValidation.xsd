@@ -1,0 +1,26 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="name">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute type="xs:string" name="id"/>
+          <xs:attribute type="xs:string" name="pass"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="move">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:byte" name="location"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="id"/>
+      <xs:attribute type="xs:string" name="pass"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

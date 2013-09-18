@@ -1,0 +1,11 @@
+Java Servlet Reversi Game
+
+type 'make' to compile all necessary files
+
+note: this game is run on a tomcat server using J2EE libraries. Please be sure to use the most updated api to prevent forward compatibility issues.
+
+At the time, a client side GUI(likely with Swing) has not been written.
+
+The game is multi-player however at this time only 2 players can play at a time and any number of observers can watch the game. All data is send via XML over HTTP between server and client and Java DOM/SAX parsing libraries are used to marshall and unmarshall data from XML to DOM (vice versa).
+
+

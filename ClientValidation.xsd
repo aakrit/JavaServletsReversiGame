@@ -1,0 +1,21 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="server_get_response" type="xs:string"/>
+  <xs:element name="server_response" type="xs:string"/>
+
+  <xs:element name="board">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="row0"/>
+        <xs:element type="xs:string" name="row2"/>
+        <xs:element type="xs:string" name="row3"/>
+        <xs:element type="xs:string" name="row4"/>
+        <xs:element type="xs:string" name="row5"/>
+        <xs:element type="xs:string" name="row6"/>
+        <xs:element type="xs:string" name="row7"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="id"/>
+      <xs:attribute type="xs:string" name="player_ture_id"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"> 
+<xs:element name="move">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="location" type="xs:int"/>
+            <xs:element name="color" type = "xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="playerID" type="xs:int" use="required"/>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>
